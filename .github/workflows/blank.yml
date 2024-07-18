@@ -28,5 +28,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/mailcow/unbound:1.21 docker://registry.cn-hangzhou.aliyuncs.com/galahadw/unbound:1.21
+         skopeo copy docker://docker.io/mariadb:10.5 docker://registry.cn-hangzhou.aliyuncs.com/galahadw/mariadb:10.5
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
